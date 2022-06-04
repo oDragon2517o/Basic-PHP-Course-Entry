@@ -29,3 +29,8 @@ echo "<h1>" . " $title" . " $god" . "</h1>";
     <input type="submit" value="ДЗ">
 </form>
 </p>
+<p>
+<form action="уроки/index.php" method="POST">
+    <input type="submit" value="уроки">
+</form>
+</p>
