@@ -23,6 +23,12 @@
     </form>
     </p>
 
+    <p>
+    <form action="3/index.php" method="POST">
+        <input type="submit" value="3">
+    </form>
+    </p>
+
 </body>
 
 </html>
