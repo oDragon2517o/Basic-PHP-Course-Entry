@@ -17,6 +17,12 @@
     </form>
     </p>
 
+    <p>
+    <form action="2/index.php" method="POST">
+        <input type="submit" value="2">
+    </form>
+    </p>
+
 </body>
 
 </html>
