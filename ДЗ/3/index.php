@@ -100,3 +100,51 @@ function transform($text)
 $text = "Тут текст с пробелами";
 
 echo transform($text);
+echo "<br>";
+echo "<br>";
+echo "6 задание" . "<br>";
+
+//echo "<hr/>";
+	$menu = ['Курсы' => ['Программирование' => 'java, 123', 'Web-дизайн' => 'Pain'],
+		'Вебинары' => ['Создание сайта за час' => 'HTML База', 'Создание игры на Android' => 'Hame Android pro+'],
+		'Форум' => 'Задай вопрос и не дождись ответа'];
+	$str = "<ul>";
+
+	foreach($menu as $item => $menuM1) {
+		if(is_array($menuM1)) {
+			$str .= "<li>$item</li><ul>";
+			foreach($menuM1 as $item2 => $menuM2) {
+				$str .= "<li>$item2</li>"."<ul>$menuM2</ul>";
+			}
+			$str .= "</ul>";
+		} else {
+			$str .= "<li>$item</li><ul>$menuM1</ul>";
+		}
+	}
+
+	$str .= "</ul>";
+	echo $str;
+	echo "<br>";
+echo "<br>";
+
+
+
+    // echo "<hr/>";
+	// $menu = ['Курсы' => ['Программирование' => 'https://geekbrains.ru/courses/14', 'Web-дизайн' => 'https://geekbrains.ru/courses/484'],
+	// 	'Вебинары' => ['Создание сайта за час' => 'https://geekbrains.ru/events/741', 'Создание игры на Android' => 'https://geekbrains.ru/events/682'],
+	// 	'Форум' => 'https://geekbrains.ru/topics'];
+	// $str = "<ul>";
+	// foreach($menu as $item => $subitem) {
+	// 	if(is_array($subitem)) {
+	// 		$str .= "<li>$item</li><ul>";
+	// 		foreach($subitem as $iitem => $ssubitem) {
+	// 			$str .= "<a href=$ssubitem><li>$iitem</li></a>";
+	// 		}
+	// 		$str .= "</ul>";
+	// 	} else {
+	// 		$str .= "<a href=$subitem><li>$item</li></a>";
+	// 	}
+	// }
+	// $str .= "</ul>";
+	// echo $str;
+	
