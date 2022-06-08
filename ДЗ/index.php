@@ -35,6 +35,13 @@
     </form>
     </p>
 
+
+    <p>
+    <form action="5/index.php" method="POST">
+        <input type="submit" value="5">
+    </form>
+    </p>
+
 </body>
 
 </html>
