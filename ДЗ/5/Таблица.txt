@@ -1,0 +1,21 @@
+    CREATE DATABASE 5dz;
+    USE 5dz;
+    CREATE TABLE foto(
+        Id INT PRIMARY KEY AUTO_INCREMENT UNIQUE,
+        AddressServerBig TEXT,
+        AddressServerSmall TEXT,
+        SizeFoto INT,
+        NameFoto TEXT
+    );
+
+
+
+
+USE 5dz;
+INSERT INTO `foto` (`id`, `NameFoto`, `AddressServerSmall`, `AddressServerBig`, `SizeFoto`) VALUES
+(1, '001', './public_html/images/small/001.jpg', './public_html/images/big/001.jpg', 700),
+(2, '002', './public_html/images/small/002.jpg', './public_html/images/big/002.jpg', 700),
+(3, '003', './public_html/images/small/003.jpg', './public_html/images/big/003.jpg', 700),
+(4, '004', './public_html/images/small/004.jpg', './public_html/images/big/004.jpg', 700),
+(5, '005', './public_html/images/small/005.jpg', './public_html/images/big/005.jpg', 700),
+(6, '006', './public_html/images/small/006.jpg', './public_html/images/big/006.jpg', 700);
