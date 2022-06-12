@@ -42,6 +42,12 @@
     </form>
     </p>
 
+    <p>
+    <form action="6/index.php" method="POST">
+        <input type="submit" value="6">
+    </form>
+    </p>
+
 </body>
 
 </html>
