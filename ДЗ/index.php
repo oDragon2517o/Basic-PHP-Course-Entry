@@ -47,6 +47,11 @@
         <input type="submit" value="6">
     </form>
     </p>
+    <p>
+    <form action="7/index.php" method="POST">
+        <input type="submit" value="7">
+    </form>
+    </p>
 
 </body>
 
