@@ -1,5 +1,5 @@
 <?php
-$name = "images/images" . $_FILES['images']['name'];
+$name = "images/images/" . $_FILES['images']['name'];
 $path = "../images/" . $_FILES['images']['name'];
 include "../../config.php";
 if (move_uploaded_file($_FILES['images']['tmp_name'], $path)) {

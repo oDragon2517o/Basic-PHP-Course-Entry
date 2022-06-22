@@ -6,8 +6,23 @@ if (isset($_GET['success']) && $_GET['success'] && $_SESSION['login']) : ?>
 endif;
 ?>
 
-<input type="submit" value="Картинки">
-<input type="submit" value="Отмеченные">
+
+<form action="images/images.php?success=true" method="post">
+    <input type="submit" value="Картинки">
+    <?php
+    // $_GET['success'];
+    // $_SESSION['login'];
+
+    ?>
+
+</form>
+
+<form action="images/script/UserImages.php" method="post">
+    <input type="submit" value="Отмеченные">
+    <?php
+
+    ?>
+</form>
 
 <?php
 if (isset($_GET['success']) && $_GET['success'] && $_SESSION['login'] == '123') : ?>
