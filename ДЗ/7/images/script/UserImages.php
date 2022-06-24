@@ -16,3 +16,5 @@ if ($result = mysqli_query($connect, "SELECT*FROM added LEFT JOIN users ON added
 } else {
     $result->error;
 };
+
+mysqli_close($connect);
